@@ -1,16 +1,16 @@
 # common-reusable-components
 Most commonly used components in every project.
 
-1.Select Component
-2.Toast
-3.Loader
+1.Select Component (multi/single/options outside)
+2.Toast ![Screenshot](https://github.com/Priyankakas/common-reusable-components/blob/main/images/toast.png)
+3.Loader (modal loader)
 4.Calender
-5.Charts
-6.Chip Item
+5.Charts (bar, pie chart)
+6.Chip Item with clear btn
 7.Checkbox
 8.TableComponent
 9.Pagination
-10.Popup
+10.Popup (simple and offcanvas)
 11.ToggleSwitch
 12.Routed tabs
 13.Simple Tabs
@@ -18,3 +18,6 @@ Most commonly used components in every project.
 15.Progressbar
 16.FileUploader
 17.Accordion
+18.SideDropdown
+19.CustomSelectWithCheckboxSearchboxInside
+20.Rating Selector
