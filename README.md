@@ -6,6 +6,7 @@ Most commonly used components in every project.
 2.Toast ![Screenshot](https://github.com/Priyankakas/common-reusable-components/blob/main/images/toast.png)
 
 3.Loader (modal loader)
+<<<<<<< HEAD
 
 4.Calender ![Screenshot](https://github.com/Priyankakas/common-reusable-components/blob/57c86115ea5f91d7f013678e7b50ac99e90f072f/images/calender.png)
 
@@ -16,6 +17,12 @@ Most commonly used components in every project.
 
 7.Checkbox ![Screenshot] (https://github.com/Priyankakas/common-reusable-components/blob/57c86115ea5f91d7f013678e7b50ac99e90f072f/images/checkbox.png)
 
+=======
+4.Calender (https://github.com/Priyankakas/common-reusable-components/blob/57c86115ea5f91d7f013678e7b50ac99e90f072f/images/calender.png)
+5.Charts (bar, pie chart)
+6.Chip Item with clear btn
+7.Checkbox
+>>>>>>> 1365bc29c4bf855e911d91084919271d349c850c
 8.TableComponent
 
 9.Pagination ![Screenshot] (https://github.com/Priyankakas/common-reusable-components/blob/57c86115ea5f91d7f013678e7b50ac99e90f072f/images/pagination.png)
