@@ -1,0 +1,38 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.loadingSpinner {
+	.modal-content {
+		border: none;
+		display: contents;
+	}
+
+	.loadingBackdrop {
+		opacity: 0.5;
+	}
+
+	.modalBody {
+		height: 0vh;
+		background-color: transparent;
+
+		.iconStyle {
+			font-size: 4em;
+			color: $defaultBgColor;
+			margin: auto;
+			float: inherit;
+		}
+
+		.verticalMiddle {
+			min-height: 90vh;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.spinner-container {
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	z-index: 1000;
+}

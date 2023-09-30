@@ -1,0 +1,176 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-table {
+    .tableWithCheckboxWithoutBottomButtons {
+        height: calc(100vh - 12rem) !important;
+    }
+
+    .tableWithCheckbox {
+        border: 1px solid $textColor7;
+        border-radius: 6px;
+        max-height: 98%;
+        height: calc(100vh - 14.5rem);
+        overflow: auto;
+        background-color: $defaultBgColor;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        .react-bootstrap-table {
+            height: 100%;
+        }
+
+        .checkboxAll {
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid $dashedBorder;
+            display: flex;
+            align-items: center;
+        }
+
+        table {
+            margin-bottom: 0px;
+
+            .custom-table-header {
+                background-color: $textColor11;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                align-items: center;
+
+                input[type="checkbox"] {
+                    cursor: pointer;
+                    pointer-events: all;
+                    accent-color: $backgroundColor7;
+                }
+                .selection-cell-header {
+                    // padding: 0;
+                    width: 0;
+                    pointer-events: none;
+                }
+
+                .sort-label {
+                    white-space: pre;
+                    line-height: 16px;
+                }
+
+                .header-label {
+                    white-space: pre-line;
+                    line-height: 17px;
+                }
+
+                .sortable {
+                    cursor: pointer;
+                    align-items: center;
+                }
+
+                th {
+                    @extend .FontBold;
+                    font-size: 0.75rem;
+                    border: 0px;
+                    color: $textColor;
+                    padding: 0.6rem;
+
+                    &:nth-of-type(1) {
+                        border-top-left-radius: 6px;
+                    }
+
+                    &:last-of-type {
+                        border-top-right-radius: 6px;
+                    }
+                }
+            }
+
+            //Table Body
+            .custom-table-body {
+                height: 100%;
+                min-height: 200px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                width: 100%;
+
+                .selection-cell {
+                    pointer-events: none;
+                }
+
+                // expand row styles
+                .expand-row-parent {
+                    background-color: $backgroundColor4;
+                }
+
+                .expand-cell {
+                    padding-left: 0px;
+                }
+
+                .action-column {
+                    width: 10px;
+                    text-align: right;
+                }
+
+                .clickable-cell {
+                    cursor: pointer;
+                }
+                .clickable-cell:hover {
+                    text-underline-position: under;
+                    text-decoration: underline;
+                }
+
+                .no-data-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .addBtn {
+                        border-radius: 0.375em;
+                        opacity: 1;
+                        border-color: $selectedItemIconBg;
+                        color: $selectedItemIconBg;
+                        background-color: $defaultBgColor;
+
+                        &:hover {
+                            border-color: $selectedItemIconBg;
+                            background-color: $defaultBgColor;
+                            color: $selectedItemIconBg;
+                        }
+                    }
+                    .no-data-image{
+                        width: 7rem;
+                        height: 7rem;
+                    }
+                }
+
+                tr {
+                    border-bottom: 1px solid $textColor7;
+                    height: 34px;
+
+                    &:last-of-type {
+                        border-bottom: 1px solid transparent;
+                    }
+
+                    td {
+                        border-top: 0px;
+                        font-size: 0.75rem;
+                        @extend .FontNormal;
+                        color: $textColor;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            tfoot {
+                border-style: hidden;
+            }
+        }
+    }
+
+    // no data  table
+    .no-data {
+        height: calc(100vh - 10rem) !important;
+        .react-bootstrap-table,
+        .table {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

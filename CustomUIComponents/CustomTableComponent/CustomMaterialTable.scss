@@ -1,0 +1,58 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-material-table {
+    height: calc(100vh - 15rem);
+
+    .MuiPaper-root {
+        height: 100%;
+    }
+    .header-label-container {
+        white-space: pre-line;
+    }
+
+    .MuiTableContainer-root {
+        border: 1px solid $textColor7;
+        border-radius: 6px;
+        max-height: 100%;
+        height: inherit;
+    }
+
+    .MuiTableCell-root {
+        padding: 0.65rem;
+        height: inherit;
+    }
+
+    .MuiTableRow-head,
+    .MuiTableCell-head {
+        background-color: $defaultBgColor;
+        @extend .FontBold;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: $textColor;
+        border-right: 1px solid $textColor7;
+    }
+
+    .Mui-TableHeadCell-Content-Labels {
+        line-height: 1rem;
+    }
+
+    .MuiTableSortLabel-icon {
+        opacity: 1;
+    }
+
+    tr {
+        &:nth-of-type(even) {
+            background-color: #fafafc;
+        }
+
+        td {
+            border-top: 0px;
+            font-size: 0.65rem;
+            line-height: 0.9rem;
+            @extend .FontNormal;
+            color: $textColor;
+            border-right: 1px solid $textColor7;
+        }
+    }
+}

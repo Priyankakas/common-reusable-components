@@ -1,0 +1,19 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-view-only{
+    .element-label {
+        font-size: 14px;
+        line-height: 20px;
+        color: $textColor1;
+        @extend .FontBold;
+    }
+
+    .element-details {
+        font-size: 14px;
+        line-height: 20px;
+        color: $textColor12;
+        @extend .FontNormal;
+        word-break: break-word;
+    }
+}

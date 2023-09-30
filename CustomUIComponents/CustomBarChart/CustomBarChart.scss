@@ -1,0 +1,70 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+
+.chip-item-list {
+
+    .chip-item {
+        border: 1px solid #DBDBDB;
+        border-radius: 15px;
+        padding: 2px 15px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .name {
+        @extend .FontNormal;
+        font-size: 12px;
+    }
+
+    .value {
+        @extend .FontMedium;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .left-icon,
+    .right-icon {
+        cursor: pointer;
+    }
+
+    [disabled] {
+        pointer-events: none;
+    }
+
+    .bqyzQp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .etbmwA {
+        order: 1;
+    }
+
+    .bghjHX {
+        margin: 0 10px;
+    }
+
+    .chip-item:hover {
+        border-color: $textColor24;
+    }
+
+    /* #region   bar charts items */
+    .slick-slide {
+        padding: 0 10px;
+
+        .chip-item {
+            margin: 8px;
+        }
+    }
+
+    /* #endregion */
+}
+
+.custom-bar-chart{
+    .recharts-bar-rectangle {
+        cursor: pointer;
+    }
+}

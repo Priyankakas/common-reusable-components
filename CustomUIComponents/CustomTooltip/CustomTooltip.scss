@@ -1,0 +1,73 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+
+.custom-tooltip-container {
+
+    .tooltip-render-for {
+        font-size: 0.75rem;
+        @extend .FontNormal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        position: relative;
+    }
+}
+
+.custom-tooltip {
+    .tooltip-inner {
+        background-color: $defaultBgColor;
+        color: $textColor;
+        width: 16rem;
+        font-size: 0.875rem;
+        @extend .FontNormal;
+        max-width: none !important;
+        // box-shadow: 0px 1px 9px $boxShadow;
+        border: 1px solid $textColor11;
+        max-height: 35vh;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .tooltip-arrow {
+        display: none;
+    }
+
+    hr {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border: 0;
+        border-top: 2px solid $dashedBorder;
+    }
+
+    @mixin project-type {
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        display: inline-block;
+    }
+
+    .project-type-1 {
+        @include project-type;
+        background-color: $textColor23;
+
+    }
+
+    .project-type-2 {
+        @include project-type;
+        background-color: $textColor24;
+    }
+
+    .project-type-3 {
+        @include project-type;
+        background-color: $textColor14;
+    }
+
+}
+
+.fade{
+    transition: none;
+}

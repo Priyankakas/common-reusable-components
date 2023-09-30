@@ -1,0 +1,73 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-offcanvas {
+	font-family: inherit !important;
+
+	.offcanvas-header {
+		text-transform: uppercase;
+		padding: 0.75rem;
+	}
+
+	.cursorPointer {
+		cursor: pointer;
+	}
+
+	.offcanvas-panel {
+		height: calc(100vh - 11rem);
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	// Button styles
+	.offcanvas-btn .btn {
+		border-radius: 0.375em;
+		min-width: 120px;
+		@extend .FontMedium;
+		letter-spacing: 0em;
+		text-transform: capitalize;
+		opacity: 1;
+		text-align: center;
+		font-size: 0.875rem;
+	}
+
+	.cancel-btn {
+		background: $defaultBgColor 0% 0% no-repeat padding-box;
+		border: 1px solid $selectedItemIconBg !important;
+		color: $selectedItemIconBg !important;
+	}
+
+	.save-btn {
+		background: $selectedItemIconBg 0% 0% no-repeat padding-box !important;
+		border-color: $selectedItemIconBg !important;
+		margin-right: 0em;
+		color: $defaultBgColor;
+	}
+
+	.save-btn:disabled,
+	.cancel-btn:disabled {
+		opacity: 0.5;
+	}
+
+	.form-label {
+		@extend .FontNormal;
+		font-size: 14px;
+		color: $textColor;
+		margin-bottom: 5px;
+
+		.mandatory {
+			color: $textColor3;
+			font-size: 0.8em;
+		}
+	}
+
+	::placeholder {
+		text-align: left;
+		font-size: 12px;
+		@extend .FontNormal;
+		letter-spacing: 0em;
+		color: $textColor;
+		opacity: 0.4;
+		color: $textColor;
+	}
+}

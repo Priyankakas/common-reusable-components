@@ -1,0 +1,41 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+
+.no-data-available {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	height: 100%;
+
+	.icon-wrapper {
+		margin: 0 auto;
+	}
+
+	.icon {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.title {
+		margin-bottom: 3px;
+		font-size: 1.625rem;
+		font-style: normal;
+		font-variant: normal;
+		@extend .FontBold;
+		color: $textColor;
+		text-align: center;
+	}
+
+	.desc {
+		font-size: 1rem;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: medium;
+		@extend .FontMedium;
+		color: $textColor;
+		text-align: center;
+	}
+}

@@ -1,0 +1,77 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.rich-text-container {
+    .rich-text-editor {
+        border: 1px solid $textColor7;
+        padding: 3px;
+        border-radius: 5px;
+        height: 200px;
+    }
+
+    .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR {
+        margin-left: 2rem;
+    }
+
+    .rdw-editor-main blockquote {
+        border-left: none;
+        padding-left: 0px;
+    }
+        .rdw-editor-main
+        {
+            overflow: hidden !important;
+        }
+
+          .rdw-start-aligned-block{
+            padding-bottom: 5px;
+          }
+    blockquote {
+        margin: 0px;
+    }
+
+    .public-DraftStyleDefault-ol
+    {
+        margin: 0;
+    }
+
+         .public-DraftStyleDefault-ul {
+             margin: 0;
+         }
+
+    .public-DraftStyleDefault-block {
+        margin: 0px !important;
+    }
+
+    .toolbarClassName {
+        font-size: calc(2px + 2vmin);
+    }
+
+    .rdw-option-wrapper {
+        min-width: 0;
+        width: 20px;
+        height: 10px;
+        margin: 0 0.5px;
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .rdw-colorpicker-option {
+        padding: 0px !important;
+    }
+    .rdw-option-active {
+        border: none !important;
+        box-shadow: none !important;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .hideToolBar {
+        visibility: hidden !important;
+        height: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .DraftEditor-editorContainer {
+        overflow: auto;
+    }
+}

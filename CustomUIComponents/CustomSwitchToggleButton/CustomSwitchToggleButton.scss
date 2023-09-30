@@ -1,0 +1,22 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.react-switch-container {
+    .react-switch-bg {
+        div {
+            height: 28px;
+            width: 30px;
+            color: $defaultBgColor;
+            margin-top: 1px;
+            font-size: 10px;
+            @extend .FontNormal;
+            right: 0;
+        }
+    }
+
+    .react-switch-handle {
+        // height: 12px !important;
+        // width: 13px !important;
+            top: 2px !important;
+    }
+}

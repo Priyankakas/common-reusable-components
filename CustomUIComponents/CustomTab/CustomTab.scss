@@ -1,0 +1,83 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+// Tab style
+.tab-container {
+    height: 100%;
+
+    .nav-tabs {
+        border-bottom: 0em;
+
+        .nav-item {
+            margin-right: 10px;
+
+            .nav-link {
+                color: $textColor1;
+                background-color: $deselectedTab;
+                border-color: $deselectedTab;
+                padding: 8px 16px;
+            }
+
+            .nav-link.active {
+                color: $selectedItemIconBg;
+                background-color: $defaultBgColor;
+                border-color: $defaultBgColor;
+            }
+        }
+    }
+
+    .tab-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tabIcon {
+            margin-right: 0.3125em;
+        }
+
+        .tabText {
+            @extend .FontBold;
+            font-size: 0.875rem;
+        }
+    }
+}
+
+.tab-container-with-bottom-buttons {
+    height: 100%;
+
+    .nav-tabs {
+        border-bottom: 0em;
+
+        .nav-item {
+            margin-right: 10px;
+
+            .nav-link {
+                color: $textColor1;
+                background-color: $deselectedTab;
+                border-color: $deselectedTab;
+                padding: 8px 16px;
+            }
+
+            .nav-link.active {
+                color: $selectedItemIconBg;
+                background-color: $defaultBgColor;
+                border-color: $defaultBgColor;
+            }
+        }
+    }
+
+    .tab-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tabIcon {
+            margin-right: 0.3125em;
+        }
+
+        .tabText {
+            @extend .FontBold;
+            font-size: 0.875rem;
+        }
+    }
+}

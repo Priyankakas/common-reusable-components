@@ -1,0 +1,39 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-toast-container {
+    .Toastify__toast-container{
+        width: 20%;
+    }
+    .Toastify__toast-body {
+        flex: auto;
+        justify-content: center;
+    }
+
+    .Toastify__toast{
+        min-height: 50px;
+    }
+
+    .Toastify__toast-body>div:last-child {
+        flex: unset !important;
+    }
+
+    .Toastify__toast--success {
+        background: $alertBg 0% 0% no-repeat padding-box;
+        color: $defaultBgColor;
+
+        .close-button{
+            display: none;
+        }
+    }
+
+    .Toastify__toast--error{
+        background:  #f9999963 0% 0% no-repeat padding-box;
+        border: 1px solid $textColor3;
+        color: $textColor3;
+
+        .Toastify__toast-icon{
+            display: none;
+        }
+    }
+}

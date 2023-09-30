@@ -1,0 +1,235 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+// Custom Single/Multi Select
+.customSelect {
+    .react-select-container {
+        font-size: 14px;
+        @extend .FontNormal;
+        cursor: pointer;
+        background: $defaultBgColor 0% 0% no-repeat padding-box !important;
+
+        .react-select__placeholder {
+            opacity: 0.5;
+            @extend .FontNormal;
+            font-size: 12px;
+        }
+
+        .react-select__control--is-focused{
+            border-color: $textColor14;
+            box-shadow: 0 0 0 1px $textColor14;
+        }
+    }
+}
+
+// Multiselect Checkbox Select
+.option-outside-select {
+    .value-container {
+        height: 50vh;
+        overflow-y: auto;
+        display: block;
+    }
+
+    .option {
+        display: flex;
+    }
+
+    .selected-skills-container {
+        height: inherit;
+        margin-top: 3px;
+        background-color: #FAFAFA;
+        padding: 3px;
+
+        .skill-name {
+            padding-left: 4px;
+        }
+    }
+
+    .skill-slider-chip {
+        padding: 5px;
+        background-color: rgb(255, 255, 255);
+        margin: 2px;
+
+        .skills-slider {
+            margin-top: 5px;
+        }
+
+        .MuiSlider-markLabel {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+
+// react select with checkbox
+
+.react-select-container.show {
+    .dropdown-toggle {
+        border: 1px solid $textColor14;
+        box-shadow: none;
+    }
+}
+
+.react-select-container {
+
+    .btn-secondary:focus,
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    .dropdown-toggle {
+        background-color: $defaultBgColor;
+        color: $textColor16;
+        @extend .FontMedium;
+        font-size: 14px;
+        border: 1px solid $textColor7;
+    }
+
+    .dropdown-toggle:after{
+        vertical-align: 0.1em;
+        margin-left: 0.5em;
+        border: none;
+        content: url("../../../assets/images/Ic_dropdown.svg");
+    }
+
+    .dropdown-menu {
+        padding: 0px;
+        border: 0px;
+    }
+
+    .cancelBtn,
+    .cancelBtn:hover {
+        color: $textColor16;
+        border: 1px solid $textColor7;
+    }
+
+    .cancelBtn.open {
+        border: 1px solid $textColor14;
+    }
+
+    .left-align,
+    .center-align {
+        margin-left: -270px;
+
+        .react-select-checkbox__menu {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+
+    .react-select-checkbox {
+        .react-select-checkbox__menu {
+            z-index: 1000;
+            margin-top: 5px;
+        }
+
+        /* #region  search bar */
+        .react-select-checkbox__control--is-focused,
+        .react-select-checkbox__control {
+            border-color: $textColor8 !important;
+            box-shadow: 0 0 0 1px $defaultBgColor;
+            margin: 5px;
+            cursor: auto;
+            min-height: 25px;
+        }
+
+        /* #endregion */
+
+        .react-select-checkbox__value-container {
+            padding: 0 8px;
+        }
+
+        .react-select-checkbox__placeholder {
+            font-size: 12px;
+            @extend .FontMedium;
+            color: $textColor !important;
+        }
+
+        .react-select-checkbox__option {
+            font-size: 12px;
+            @extend .FontNormal;
+            color: $textColor;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 5px 15px;
+        }
+
+        .react-select-checkbox__option:hover,
+        .react-select-checkbox__option--is-focused,
+        .react-select-checkbox__option--is-selected {
+            background-color: $defaultBgColor;
+        }
+
+        .react-select-checkbox__dropdown-indicator{
+            transform: none;
+        }
+
+        .checkbox-select {
+            accent-color: $textColor14;
+        }
+
+        /* #region  clear all button */
+        .clear-all {
+            flex: auto !important;
+
+            .clear {
+                font-size: 12px;
+                @extend .FontMedium;
+                color: $textColor14;
+            }
+
+            .selected-label {
+                font-size: 12px;
+                @extend .FontNormal;
+                font-style: italic;
+                color: $textColor22;
+                opacity: 0.5;
+            }
+
+            border-top: 1px solid $textColor8;
+        }
+
+        /* #endregion */
+
+        /* #region  group options */
+        .react-select-checkbox__group-heading {
+            text-transform: capitalize;
+            font-size: 14px;
+            @extend .FontNormal;
+            color: $textColor22;
+        }
+
+        .react-select-checkbox__group {
+            padding-top: 5px;
+            border-bottom: 1px solid $textColor8;
+        }
+
+        // display in row
+        .react-select-checkbox__group :nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-align {
+            display: flex;
+            flex-wrap: wrap;
+
+            .react-select-checkbox__option {
+                flex: 1 1 160px;
+            }
+        }
+
+        .group-section {
+            pointer-events: none;
+            opacity: 0.5
+        }
+
+        /* #endregion */
+
+        .react-select-checkbox__indicator {
+            color: $textColor16;
+        }
+    }
+}

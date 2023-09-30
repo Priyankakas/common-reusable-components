@@ -1,0 +1,50 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.custom-side-dropdown {
+    .btn-secondary {
+        --bs-btn-bg: $defaultBgColor;
+        --bs-btn-border-color: none;
+        --bs-btn-hover-bg: none;
+        --bs-btn-hover-border-color: none;
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-active-bg: none;
+        --bs-btn-active-border-color: none;
+        --bs-btn-color: transparent;
+        padding: 0;
+    }
+
+    .btn-secondary:focus {
+        color: transparent;
+    }
+
+    .btn-secondary:disabled{
+        opacity: 0.6;
+        background : none;
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-link-active-bg: none;
+        --bs-dropdown-link-active-color: 'black'
+    }
+
+    .dropdown-toggle::before {
+        content: url("../../../assets/images/IC_action_dropdown.svg");
+        border: none;
+    }
+
+    .dropdown-menu {
+        @extend .FontMedium;
+        font-size: 12px;
+        box-shadow: 0px 3px 6px #0000001F;
+        border: none;
+
+        .approve {
+            color: $textColor14;
+        }
+
+        .reject {
+            color: $textColor13;
+        }
+    }
+}

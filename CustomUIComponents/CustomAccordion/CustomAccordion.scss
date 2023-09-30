@@ -1,0 +1,48 @@
+
+@import "STYLES/Fonts.scss";
+@import "STYLES/Color.scss";
+
+
+
+.custom-accordion-container {
+    background-color: $backgroundColor2;
+    overflow-y: auto !important;
+    .custom-accordion {
+        .card{
+            border: none;
+        }
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border: none;
+            background:transparent;
+            .header-prefix {
+                @extend .FontNormal;
+                color: $textColor;
+                font-size: 16px;
+                opacity: 1;
+                .header-prefix-data {
+                    @extend .FontNormal;
+                    color:$textColor;
+                    opacity: 0.7;
+                }
+            }
+            .header-suffix{
+                @extend .FontMedium;
+                color:$textColor14;
+                font-size: 14px;
+                letter-spacing: 0px;
+                opacity: 1;
+            }
+        }
+        .accordion-item{
+            border: none;
+        }
+        .accordion-flush .accordion-collapse{
+            padding-bottom: 1rem;
+        }
+
+    }
+}

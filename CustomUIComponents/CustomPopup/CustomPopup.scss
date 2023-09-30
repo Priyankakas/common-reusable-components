@@ -1,0 +1,148 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+// customize react-responive-modal
+.custom-modal {
+    min-width: 443px;
+    height: auto;
+    max-height: 300px;
+    opacity: 1;
+    padding: 0 !important;
+    border-radius: 6px;
+
+    .modal-content {
+        .modal-header {
+            border-bottom: none;
+            padding: 0.75rem;
+
+            .modal-title {
+                opacity: 1;
+                @extend .FontBold;
+                font-size: 1rem;
+                line-height: 19px;
+                text-transform: uppercase;
+                align-items: center;
+            }
+        }
+
+        .modal-body {
+            @extend .FontNormal;
+            font-size: 0.875rem;
+            padding-bottom: 0px;
+
+            .modal-panel {
+                max-height: 600px;
+            }
+
+            .hr {
+                margin-top: 0.5em;
+            }
+        }
+
+        .custom-modal-footer {
+            padding: 0.75rem;
+            padding-top: 0px !important;
+            border-top: none;
+            align-items: center;
+
+            // Button styles
+            .cancel-btn {
+                background: $defaultBgColor 0% 0% no-repeat padding-box;
+                border: 1px solid $selectedItemIconBg;
+                border-radius: 0.375em;
+                opacity: 1;
+                min-width: 70px;
+                text-align: center;
+                font-size: 0.875rem;
+                @extend .FontMedium;
+                letter-spacing: 0em;
+                color: $selectedItemIconBg;
+                text-transform: capitalize;
+            }
+
+            .save-btn {
+                background: $selectedItemIconBg 0% 0% no-repeat padding-box;
+                border-radius: 0.375em;
+                border-color: $selectedItemIconBg !important;
+                margin-right: 0em;
+                min-width: 70px;
+                text-align: center;
+                font-size: 0.875rem;
+                @extend .FontMedium;
+                letter-spacing: 0em;
+                color: $defaultBgColor;
+                text-transform: capitalize;
+                opacity: 1;
+            }
+
+            .save-btn:disabled,
+            .cancel-btn:disabled {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .form-control {
+        font-size: 12px;
+        @extend .FontNormal;
+        height: 38px;
+    }
+
+    .form-control:valid,
+    .form-select:valid {
+        border-color: $textColor7 !important;
+        background-image: none;
+    }
+
+    .textarea {
+        resize: none;
+        height: 5em;
+    }
+
+    ::placeholder {
+        text-align: left;
+        font-size: 12px;
+        @extend .FontNormal;
+        letter-spacing: 0em;
+        color: $textColor;
+        opacity: 0.4;
+        color: $textColor;
+    }
+
+    .form-label {
+        @extend .FontNormal;
+        font-size: 14px;
+        color: $textColor;
+
+        .mandatory {
+            color: $textColor3;
+            font-size: 0.8em;
+        }
+    }
+
+    .form-value {
+        @extend .FontMedium;
+        font-size: 12px;
+        color: $textColor;
+    }
+
+    .mandatory {
+        color: $textColor3;
+        font-size: 0.8em;
+    }
+
+    .input-card-form {
+        .invalid-feedback {
+            display: block;
+        }
+    }
+
+    .error-text {
+        color: $textColor3;
+        font-size: 12px;
+    }
+
+    .cursorPointer {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,33 @@
+@import "STYLES/Fonts.scss";
+@import "STYLES/Color.scss";
+
+.pie-chart-container{
+    height: 169px !important;
+
+    :focus {
+        outline: none !important;
+    }
+    
+    .legend-text {
+        font-size: 16px;
+    }
+    .recharts-surface {
+        height: 160px !important;
+
+        .total{
+            color: $textColor1;
+            font-size: 14px;
+            @extend .FontNormal;
+        }
+
+        .count{
+            color: $textColor22;
+            @extend .FontBold;
+            font-size: 15px;
+        }
+    }
+    .recharts-pie-sector{
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,35 @@
+@import "STYLES/Color.scss";
+@import "STYLES/Fonts.scss";
+
+.linear-bar-container {
+    display: flex;
+    align-items: center;
+    .linear-bar {
+        width: 50%;
+        padding: 3px;
+        border-radius: 8px;
+
+        .progress-bar {
+            border-radius: 6px;
+            background-color: #2CAD72;
+        }
+
+        .bg-success {
+            background-color: $textColor14 !important;
+        }
+
+        .bg-danger {
+            background-color: $textColor3 !important;
+        }
+    }
+
+    .small-bar {
+        border-radius: 6px;
+        height: 10px;
+        background-color: $textColor23;
+    }
+
+    .w-8 {
+        width: 8%;
+    }
+}
